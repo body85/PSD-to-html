@@ -29,7 +29,7 @@ h3 {
 .primary {
     color: #e74c3c;
 }
-primary-bg {
+.primary-bg {
     background-color: #e74c3c;
 }
 .secondary-dark-blue {
@@ -44,11 +44,16 @@ primary-bg {
 .secondary-sky-blue-bg {
     background-color: #2d82d8;
 }
-a {
+a,
+a:hover{
     text-decoration: none;
 }
 a:focus {
     outline: 0;
+}
+ol,
+ul {
+    margin-bottom: 0;
 }
 ul {
     list-style: none;
@@ -93,14 +98,43 @@ header nav ul li a:focus {
 /*======================================================
  * Slider
  *======================================================*/
- .slider,
- .slider ul,
- .slider ul li {
+.slider,
+.slider ul.slider-carousal,
+.slider ul.slider-carousal li {
      width: 100%;
-     height: 600;
+     height: 500px;
      text-align: center;
- }
- .slider ul li a {
-     padding: 5px 30px;
-     margin-right: 10px;
- }
+     color: #fff;
+}
+.slider ul.slider-carousal li h1 {
+    margin-top: 150px;
+     margin-bottom: 30px;
+     color:#fff;
+}
+.slider ul.slider-carousal li p {
+     margin-bottom: 50px;
+}
+.slider ul.slider-carousal li a {
+     padding: 10px 50px;
+     margin-right: 30px;
+     color: #fff;
+     font-weight: bold;
+     transition: all 0.3 ease-in;
+}
+.slider ul.slider-carousal li a:last-child {
+    margin-right: 0;
+}
+.img {
+    background: url('http://placehold.it/500x1200')no-repeat center;
+    background-size: cover;
+}
+
+.slider ul.sliderpager li {
+    padding: 0 3px 0;
+}
+.slider ul.sliderpager li a {
+    color: #34495e;
+}
+.slider ul.sliderpager li.selected a {
+    color:#e74c3c;
+}

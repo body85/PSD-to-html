@@ -18,6 +18,10 @@ jQuery(document).ready(function(){
                 max:1
             },
         height:"variable"
+        },
+        pagination:{
+            container: '.sliderpager',
+            anchorBuilder: false
         }
     })
 });
