@@ -10,6 +10,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     color: #777;
+    height: 2000px
 }
 h1 {
     font-size: 36px;
@@ -65,32 +66,44 @@ ul li {
 /*======================================================
  * HEADER
  *======================================================*/
-header {
+#header {
     color: #fff;
-    height: 112px;
-    line-height: 112px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
 }
-header a.logo {
+.header {
+   height: 112px;
+   line-height: 112px;
+}
+.header-fixed {
+    height: 70px;
+    line-height: 70px;
+    background: #34495c;
+    -webkit-transition:all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+#header a.logo {
     float: left;
     font-size: 30px;
     font-weight: 900;
     color: #fff;
     text-decoration: none;
 }
-header a.logo img {margin-right: 10px;}
-header nav {
+#header a.logo img {margin-right: 10px;}
+#header nav {
     float: right;
     font-weight: bold;
 }
-header nav ul li {
+#header nav ul li {
     padding-left: 30px;
 }
-header nav ul li a {
+#header nav ul li a {
     color: #fff;
     transition: all 0.2 ease-in;
 }
-header nav ul li a:hover,
-header nav ul li a:focus {
+#header nav ul li a:hover,
+#header nav ul li a:focus {
     color: #e74c3c;
     text-decoration: none;
 }

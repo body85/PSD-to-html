@@ -24,4 +24,24 @@ jQuery(document).ready(function(){
             anchorBuilder: false
         }
     })
+
+    /*=====================================================
+     *  header fixed
+     * ====================================================*/
+    $(window).scroll(function(){
+        var top = $(window).scrollTop();
+        if(top>=112){
+            $("header").removeClass('header');
+            $("header").addClass("header-fixed");
+        }
+        else{
+            if($("header").hasClass('header-fixed')){
+                 $("header").removeClass('header-fixed');
+                 $("header").addClass('header');
+            }
+        }
+    })
+
+
+
 });
