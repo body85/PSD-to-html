@@ -2,6 +2,9 @@ jQuery(document).ready(function(){
 
     "use strict";
 
+    /*=====================================================
+     *  Slider-Carousal
+     * ====================================================*/
     $('#slider-carousal').carouFredSel({
         responsive:true,
         width:'100%',
@@ -24,6 +27,81 @@ jQuery(document).ready(function(){
             anchorBuilder: false
         }
     })
+
+    /*=====================================================
+     *  Portfolio-Carousel
+     * ====================================================*/
+    $('.portfolio-carousel').carouFredSel({
+        responsive:true,
+        width:'100%',
+        circular:true,
+        prev: "#prev",
+        next: "#next",
+        scroll:{
+            items:1,
+            duration:500,
+            pauseOnHover:true
+        },
+        auto:true,
+        items:{
+            visible:{
+                min:1,
+                max:4
+            },
+        height:"variable"
+        }
+    })
+
+    /*=====================================================
+     *  Team-Carousel
+     * ====================================================*/
+    $('.team-carousel').carouFredSel({
+        responsive:true,
+        width:'100%',
+        circular:true,
+        prev: "#team-prev",
+        next: "#team-next",
+        scroll:{
+            items:1,
+            duration:500,
+            pauseOnHover:true
+        },
+        auto:true,
+        items:{
+            visible:{
+                min:1,
+                max:4
+            },
+        height:"variable"
+        }
+    })
+
+    /*=====================================================
+     *  Testimonials-Carousal
+     * ====================================================*/
+    $('.testimonials-carousel').carouFredSel({
+        responsive:true,
+        width:'100%',
+        circular:true,
+        scroll:{
+            items:1,
+            duration:500,
+            pauseOnHover:true
+        },
+        auto:true,
+        items:{
+            visible:{
+                min:1,
+                max:1
+            },
+        height:"variable"
+        },
+        pagination:{
+            container: '.testipager',
+            anchorBuilder: false
+        }
+    })
+
 
     /*=====================================================
      *  header fixed
