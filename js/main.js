@@ -3,6 +3,12 @@ jQuery(document).ready(function(){
     "use strict";
 
     /*=====================================================
+     *  SlickNav
+     * ====================================================*/
+    $('#menu').slicknav({
+        label: ''
+    })
+    /*=====================================================
      *  Slider-Carousal
      * ====================================================*/
     $('#slider-carousal').carouFredSel({
@@ -111,11 +117,13 @@ jQuery(document).ready(function(){
         if(top>=112){
             $("header").removeClass('header');
             $("header").addClass("header-fixed");
+            $(".slicknav_btn").css("margin-top","15px");
         }
         else{
             if($("header").hasClass('header-fixed')){
                  $("header").removeClass('header-fixed');
                  $("header").addClass('header');
+                 $(".slicknav_btn").css("margin-top","35px");
             }
         }
     })
